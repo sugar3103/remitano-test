@@ -29,7 +29,7 @@ function Header(props: HeaderProps) {
     <header className="w-full flex justify-between items-center py-8 md:px-4">
       <Link to="/" className="flex items-center">
         <span className="w-16">
-          <img src={HomeIcon} className="w-24 md:w-20 " />
+          <img src={HomeIcon} className="w-24 md:w-20 " alt="icon home remi" />
         </span>
         <p className="hidden md:block md:text-4xl font-bold"> Funny Movies</p>
       </Link>

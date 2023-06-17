@@ -24,9 +24,9 @@ function Layout() {
               <MainRoute loginInfo={loginInfo} />
             </div>
           </div>
-          <div className="fixed bottom-0 left-0 py-4 bg-sky-500 w-full flex justify-center">
+          {/* <div className="fixed bottom-0 left-0 py-4 bg-sky-500 w-full flex justify-center">
             <h2 className="font-bold text-white">Made by Duong Phan</h2>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

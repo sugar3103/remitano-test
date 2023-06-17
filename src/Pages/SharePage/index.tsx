@@ -11,25 +11,29 @@ function SharePage(props: ISharePage) {
   const { loginInfo } = props;
   const navigate = useNavigate();
 
-  const [shareLink, setShareLink] = useState<string | null>(null);
+  const [linkToShare, setLinkToShare] = useState<string | null>(null);
 
   function shareTheLink(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!shareLink?.includes("youtube.com")) {
+
+    // log out the value for you to see the inputed link
+    console.log("the link to share ", linkToShare);
+
+    if (!linkToShare?.includes("youtube.com")) {
       alert("Must be a Youtube link");
     } else {
       // const getVideoList = localStorage.getItem("videoList");
       // const videoList = getVideoList ? JSON.parse(getVideoList) : [];
 
-      const getVideoList = localStorage.getItem("videoList");
+      // const getVideoList = localStorage.getItem("videoList");
       const videoList: IVideo[] = [];
 
-      const youtubeLink = `https://noembed.com/embed?url=${shareLink}`;
+      const youtubeLink = `https://noembed.com/embed?url=${linkToShare}`;
 
       fetch(youtubeLink)
         .then((response) => response.json())
         .then((result) => {
-          const videoId = shareLink.split("v=")[1];
+          const videoId = linkToShare.split("v=")[1];
           const existedVideo = videoList.find(
             (e: IVideo) => e.videoId === videoId
           );
@@ -48,7 +52,7 @@ function SharePage(props: ISharePage) {
 
   return (
     <div className="md:px-24 md:py-12">
-      {loginInfo?.email ? (
+      {!loginInfo?.email ? (
         <div className="rounded-md border-2 border-black p-4">
           <div className="-mt-8 mb-6 px-2 bg-white w-6/12">
             Share a Youtube movie
@@ -56,7 +60,12 @@ function SharePage(props: ISharePage) {
           <form onSubmit={shareTheLink}>
             <div className="">
               <label>Youtube URL : </label>
-              <input type={"url"} required className="border-2 w-9/12 px-1" />
+              <input
+                type={"url"}
+                onChange={(e) => setLinkToShare(e.target.value)}
+                required
+                className="border-2 w-9/12 px-1"
+              />
             </div>
             <button
               type="submit"
