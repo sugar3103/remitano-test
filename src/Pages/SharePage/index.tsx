@@ -52,7 +52,7 @@ function SharePage(props: ISharePage) {
 
   return (
     <div className="md:px-24 md:py-12">
-      {!loginInfo?.email ? (
+      {loginInfo?.email ? (
         <div className="rounded-md border-2 border-black p-4">
           <div className="-mt-8 mb-6 px-2 bg-white w-6/12">
             Share a Youtube movie
