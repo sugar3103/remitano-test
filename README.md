@@ -19,6 +19,7 @@ remitano1@gmail.com / remitano
 
 For testing, it didn't included in this codebase neither.
 You can check the testing result in this live video
+[Unit testing demo](https://youtu.be/RGdAjt4ljEs)
 
 # Getting Started with Create React App
 
