@@ -1,3 +1,25 @@
+# This project only to show you the layout, nothing more, to be fair you will get the full code after i got the job, cheers :D
+
+# You can check the actual live running site under this URL
+
+[Real running example](https://remitano-duong.web.app) to view it in the browser
+
+# To check the live running demo running in this video
+
+[Demo](https://youtu.be/2mwfhgISIfM) to view the live running demo
+
+# Login credential to use
+
+id / password
+duongphan@gmail.com / remitano
+remitano@gmail.com / remitano
+remitano1@gmail.com / remitano
+
+# Testing
+
+For testing, it didn't included in this codebase neither.
+You can check the testing result in this live video
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
