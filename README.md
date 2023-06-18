@@ -14,12 +14,14 @@ id / password
 duongphan@gmail.com / remitano
 remitano@gmail.com / remitano
 remitano1@gmail.com / remitano
+if you wanted to create your own account, please go here
+[Account Register](https://remitano-duong.web.app/register)
 
 # Testing
 
 For testing, it didn't included in this codebase neither.
 You can check the testing result in this live video
-[Unit testing demo](https://youtu.be/RGdAjt4ljEs)
+[Unit testing demo](https://youtu.be/-eYHI3t5Q8M)
 
 # Getting Started with Create React App
 
